@@ -2,10 +2,10 @@ import subprocess
 import numpy as np
 import re
 
-REF = "data/mocap_marker_1173.tum"
-EST = "data/slam_clean.tum"
+REF = "data/mocap_clean2.tum"
+EST = "data/slam_clean2.tum"
 
-offsets = np.arange(-3.0, 3.001, 0.005)
+offsets = np.arange(1.340, 1.355, 0.0001)
 
 best_rmse = float("inf")
 best_offset = None
@@ -15,7 +15,6 @@ pattern = re.compile(r"rmse\s+([0-9.eE+-]+)")
 for off in offsets:
     cmd = [
         "evo_ape", "tum", REF, EST,
-        "--align",
         "--pose_relation", "trans_part",
         "--t_max_diff", "0.005",
         "--t_offset", f"{off}",

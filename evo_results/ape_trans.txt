@@ -1,35 +1,35 @@
 --------------------------------------------------------------------------------
-Loaded 2519 stamps and poses from: data/mocap_marker_1173.tum
-Loaded 10800 stamps and poses from: data/slam_clean.tum
+Loaded 2426 stamps and poses from: data/mocap_clean2.tum
+Loaded 9917 stamps and poses from: data/slam_clean2.tum
 --------------------------------------------------------------------------------
 Synchronizing trajectories...
-Found 2249 of max. 2519 possible matching timestamps between...
-	data/mocap_marker_1173.tum
-and:	data/slam_clean.tum
-..with max. time diff.: 0.001 (s) and time offset: -2.71 (s).
+Found 2218 of max. 2426 possible matching timestamps between...
+	data/mocap_clean2.tum
+and:	data/slam_clean2.tum
+..with max. time diff.: 0.001 (s) and time offset: 1.342 (s).
 --------------------------------------------------------------------------------
 Aligning using Umeyama's method...
 Rotation of alignment:
-[[ 0.07187509 -0.99740909  0.00301263]
- [-0.01880188  0.00166502  0.99982184]
- [-0.99723641 -0.07191892 -0.01863349]]
+[[ 0.07625553 -0.99704091 -0.0097216 ]
+ [ 0.00846693 -0.00910213  0.99992273]
+ [-0.99705236 -0.07633195  0.00774779]]
 Translation of alignment:
-[-0.0721198   0.26885533  0.21811004]
+[-0.07431248  0.27002861  0.22576476]
 Scale correction: 1.0
 --------------------------------------------------------------------------------
-Compared 2249 absolute pose pairs.
+Compared 2218 absolute pose pairs.
 Calculating APE for translation part pose relation...
 --------------------------------------------------------------------------------
 APE w.r.t. translation part (m)
 (with SE(3) Umeyama alignment)
 
-       max	0.024523
-      mean	0.009951
-    median	0.009156
-       min	0.002718
-      rmse	0.010963
-       sse	0.270316
-       std	0.004601
+       max	0.023190
+      mean	0.009467
+    median	0.009371
+       min	0.000798
+      rmse	0.010501
+       sse	0.244585
+       std	0.004544
 
 --------------------------------------------------------------------------------
 Plotting results... 

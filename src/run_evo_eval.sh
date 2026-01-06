@@ -2,7 +2,7 @@
 set -e
 
 # ===== 默认参数 =====
-T_OFFSET=-2.710
+T_OFFSET=1.342
 T_MAX_DIFF=0.001
 
 # ===== 解析命令行参数 =====
@@ -21,8 +21,8 @@ for arg in "$@"; do
   esac
 done
 
-REF=data/mocap_marker_1173.tum
-EST=data/slam_clean.tum
+REF=data/mocap_clean2.tum
+EST=data/slam_clean2.tum
 OUTDIR=evo_results
 
 mkdir -p ${OUTDIR}
@@ -35,17 +35,8 @@ echo "=== 基本检查 ==="
 evo_traj tum ${REF} ${EST} --full_check > ${OUTDIR}/check.txt
 
 echo "=== APE（仅平移） ==="
-# evo_ape tum ${REF} ${EST} \
-#   --t_offset ${T_OFFSET} \
-#   --t_max_diff ${T_MAX_DIFF} \
-#   --align \
-#   --pose_relation trans_part \
-#   -va \
-#   --save_results ${OUTDIR}/ape_trans.zip \
-#   --plot \
-#   > ${OUTDIR}/ape_trans.txt
-
 evo_ape tum ${REF} ${EST} \
+  --t_offset ${T_OFFSET} \
   --t_max_diff ${T_MAX_DIFF} \
   --align \
   --pose_relation trans_part \
@@ -53,5 +44,14 @@ evo_ape tum ${REF} ${EST} \
   --save_results ${OUTDIR}/ape_trans.zip \
   --plot \
   > ${OUTDIR}/ape_trans.txt
+
+# evo_ape tum ${REF} ${EST} \
+#   --t_max_diff ${T_MAX_DIFF} \
+#   --align \
+#   --pose_relation trans_part \
+#   -va \
+#   --save_results ${OUTDIR}/ape_trans.zip \
+#   --plot \
+#   > ${OUTDIR}/ape_trans.txt
 
 echo "=== 完成 ==="
