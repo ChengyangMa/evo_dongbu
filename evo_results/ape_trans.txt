@@ -1,0 +1,39 @@
+--------------------------------------------------------------------------------
+Loaded 2519 stamps and poses from: data/mocap_marker_1173.tum
+Loaded 10800 stamps and poses from: data/slam_clean.tum
+--------------------------------------------------------------------------------
+Synchronizing trajectories...
+Found 2249 of max. 2519 possible matching timestamps between...
+	data/mocap_marker_1173.tum
+and:	data/slam_clean.tum
+..with max. time diff.: 0.001 (s) and time offset: -2.71 (s).
+--------------------------------------------------------------------------------
+Aligning using Umeyama's method...
+Rotation of alignment:
+[[ 0.07187509 -0.99740909  0.00301263]
+ [-0.01880188  0.00166502  0.99982184]
+ [-0.99723641 -0.07191892 -0.01863349]]
+Translation of alignment:
+[-0.0721198   0.26885533  0.21811004]
+Scale correction: 1.0
+--------------------------------------------------------------------------------
+Compared 2249 absolute pose pairs.
+Calculating APE for translation part pose relation...
+--------------------------------------------------------------------------------
+APE w.r.t. translation part (m)
+(with SE(3) Umeyama alignment)
+
+       max	0.024523
+      mean	0.009951
+    median	0.009156
+       min	0.002718
+      rmse	0.010963
+       sse	0.270316
+       std	0.004601
+
+--------------------------------------------------------------------------------
+Plotting results... 
+--------------------------------------------------------------------------------
+Saving results to evo_results/ape_trans.zip...
+[WARNING] evo_results/ape_trans.zip exists, overwrite?
+enter 'y' to overwrite or any other key to cancel

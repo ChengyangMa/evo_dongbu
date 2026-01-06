@@ -1,0 +1,52 @@
+--------------------------------------------------------------------------------
+name:	mocap_marker_1173
+infos:
+	duration (s)	20.983333
+	nr. of poses	2519
+	path length (m)	0.8394285638988404
+	pos_end (m)	[-0.01508867  0.15450165 -0.04356831]
+	pos_start (m)	[0.03857525 0.12331417 0.2630014 ]
+	t_end (s)	20.983333
+	t_start (s)	0.0
+checks:
+	SE(3) conform	yes
+	array shapes	ok
+	nr. of stamps	ok
+	quaternions	ok
+	timestamps	ok
+stats:
+	dt_avg (s)	0.008333
+	dt_max (s)	0.008334
+	dt_min (s)	0.008333
+	v_avg (km/h)	0.144016
+	v_avg (m/s)	0.040005
+	v_max (km/h)	0.617658
+	v_max (m/s)	0.171572
+	v_min (km/h)	0.000634
+	v_min (m/s)	0.000176
+--------------------------------------------------------------------------------
+name:	slam_clean
+infos:
+	duration (s)	21.598011
+	nr. of poses	10800
+	path length (m)	0.770004228874341
+	pos_end (m)	[ 0.25835378  0.05943441 -0.10794047]
+	pos_start (m)	[-0.02322236 -0.10957536 -0.14810144]
+	t_end (s)	21.598011
+	t_start (s)	0.0
+checks:
+	SE(3) conform	yes
+	array shapes	ok
+	nr. of stamps	ok
+	quaternions	ok
+	timestamps	ok
+stats:
+	dt_avg (s)	0.002000
+	dt_max (s)	0.004246
+	dt_min (s)	0.000005
+	v_avg (km/h)	0.128343
+	v_avg (m/s)	0.035651
+	v_max (km/h)	0.688274
+	v_max (m/s)	0.191187
+	v_min (km/h)	0.002118
+	v_min (m/s)	0.000588
