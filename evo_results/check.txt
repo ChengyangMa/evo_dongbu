@@ -1,12 +1,12 @@
 --------------------------------------------------------------------------------
-name:	mocap_clean2
+name:	motion_capture_adjusted
 infos:
-	duration (s)	20.208333
-	nr. of poses	2426
-	path length (m)	1.0482821243571974
-	pos_end (m)	[0.04483373 0.14279141 0.26072867]
-	pos_start (m)	[0.03165928 0.1231952  0.23925311]
-	t_end (s)	20.208333
+	duration (s)	10.974073
+	nr. of poses	1318
+	path length (m)	1.209595018732868
+	pos_end (m)	[0.356833 0.149839 0.092948]
+	pos_start (m)	[0.30746  0.149586 0.124772]
+	t_end (s)	10.974073
 	t_start (s)	0.0
 checks:
 	SE(3) conform	yes
@@ -16,22 +16,22 @@ checks:
 	timestamps	ok
 stats:
 	dt_avg (s)	0.008333
-	dt_max (s)	0.008334
-	dt_min (s)	0.008333
-	v_avg (km/h)	0.186745
-	v_avg (m/s)	0.051874
-	v_max (km/h)	0.508146
-	v_max (m/s)	0.141152
-	v_min (km/h)	0.000481
-	v_min (m/s)	0.000134
+	dt_max (s)	0.012559
+	dt_min (s)	0.003090
+	v_avg (km/h)	0.401931
+	v_avg (m/s)	0.111647
+	v_max (km/h)	1.405661
+	v_max (m/s)	0.390461
+	v_min (km/h)	0.000521
+	v_min (m/s)	0.000145
 --------------------------------------------------------------------------------
-name:	slam_clean2
+name:	slam_adjusted
 infos:
 	duration (s)	19.831992
 	nr. of poses	9917
-	path length (m)	0.9989258383115107
-	pos_end (m)	[-0.01507251 -0.12021957 -0.14707699]
-	pos_start (m)	[-0.00493943 -0.10851464 -0.14798038]
+	path length (m)	0.998965652090142
+	pos_end (m)	[-0.015073 -0.12022  -0.147077]
+	pos_start (m)	[-0.004939 -0.108515 -0.14798 ]
 	t_end (s)	19.831992
 	t_start (s)	0.0
 checks:
@@ -44,9 +44,9 @@ stats:
 	dt_avg (s)	0.002000
 	dt_max (s)	0.010576
 	dt_min (s)	0.000001
-	v_avg (km/h)	0.181293
+	v_avg (km/h)	0.181294
 	v_avg (m/s)	0.050359
-	v_max (km/h)	0.523037
-	v_max (m/s)	0.145288
-	v_min (km/h)	0.002045
-	v_min (m/s)	0.000568
+	v_max (km/h)	0.521767
+	v_max (m/s)	0.144935
+	v_min (km/h)	0.000000
+	v_min (m/s)	0.000000

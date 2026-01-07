@@ -1,39 +1,35 @@
 --------------------------------------------------------------------------------
-Loaded 2426 stamps and poses from: data/mocap_clean2.tum
-Loaded 9917 stamps and poses from: data/slam_clean2.tum
+Loaded 1318 stamps and poses from: motion_capture_adjusted.txt
+Loaded 9917 stamps and poses from: slam_adjusted.txt
 --------------------------------------------------------------------------------
 Synchronizing trajectories...
-Found 2218 of max. 2426 possible matching timestamps between...
-	data/mocap_clean2.tum
-and:	data/slam_clean2.tum
-..with max. time diff.: 0.001 (s) and time offset: 1.342 (s).
+Found 1307 of max. 1318 possible matching timestamps between...
+	motion_capture_adjusted.txt
+and:	slam_adjusted.txt
+..with max. time diff.: 0.001 (s) and time offset: 0.0 (s).
 --------------------------------------------------------------------------------
 Aligning using Umeyama's method...
 Rotation of alignment:
-[[ 0.07625553 -0.99704091 -0.0097216 ]
- [ 0.00846693 -0.00910213  0.99992273]
- [-0.99705236 -0.07633195  0.00774779]]
+[[ 0.70207197  0.69500096 -0.15514066]
+ [-0.61012274  0.47473176 -0.6343343 ]
+ [-0.36721274  0.54000317  0.75733175]]
 Translation of alignment:
-[-0.07431248  0.27002861  0.22576476]
+[0.24253632 0.16645997 0.2196139 ]
 Scale correction: 1.0
 --------------------------------------------------------------------------------
-Compared 2218 absolute pose pairs.
+Compared 1307 absolute pose pairs.
 Calculating APE for translation part pose relation...
 --------------------------------------------------------------------------------
 APE w.r.t. translation part (m)
 (with SE(3) Umeyama alignment)
 
-       max	0.023190
-      mean	0.009467
-    median	0.009371
-       min	0.000798
-      rmse	0.010501
-       sse	0.244585
-       std	0.004544
+       max	0.199593
+      mean	0.143122
+    median	0.151731
+       min	0.040843
+      rmse	0.146288
+       sse	27.969955
+       std	0.030267
 
 --------------------------------------------------------------------------------
 Plotting results... 
---------------------------------------------------------------------------------
-Saving results to evo_results/ape_trans.zip...
-[WARNING] evo_results/ape_trans.zip exists, overwrite?
-enter 'y' to overwrite or any other key to cancel
