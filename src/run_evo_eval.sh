@@ -2,7 +2,7 @@
 set -e
 
 # ===== 默认参数 =====
-T_OFFSET=1.342
+T_OFFSET=0
 T_MAX_DIFF=0.001
 
 # ===== 解析命令行参数 =====
@@ -21,8 +21,8 @@ for arg in "$@"; do
   esac
 done
 
-REF=data/mocap_clean2.tum
-EST=data/slam_clean2.tum
+REF=mocap_clean2.tum
+EST=slam_clean2.tum
 OUTDIR=evo_results
 
 mkdir -p ${OUTDIR}
